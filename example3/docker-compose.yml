@@ -1,0 +1,15 @@
+version: "2"
+services:
+  postgres:
+    image: floodplain/floodplain-postgres-demo:1.0.0
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.7.0
+    container_name: elasticsearch
+    ports:
+      - 9200:9200
+    environment:
+      - discovery.type=single-node

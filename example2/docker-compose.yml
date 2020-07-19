@@ -1,0 +1,18 @@
+version: "2"
+services:
+  postgres:
+    image: floodplain/floodplain-postgres-demo:1.0.0
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+  mongo:
+    image: mongo:latest
+    container_name: "mongo"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+    ports:
+      - 27017:27017
+    logging:
+      driver: none
+    command: mongod # --quiet

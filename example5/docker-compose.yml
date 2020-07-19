@@ -1,0 +1,20 @@
+web:
+ image: wordpress
+ links:
+  - mysql
+ environment:
+  - WORDPRESS_DB_NAME=wpdb
+  - WORDPRESS_DB_USER=mysqluser
+  - WORDPRESS_DB_PASSWORD=mysqlpw
+ ports:
+  - "8080:80"
+mysql:
+ image: debezium/example-mysql
+ ports:
+  - "3306:3306"
+ environment:
+  - MYSQL_ROOT_PASSWORD=mysecretpassword
+  - MYSQL_DATABASE=wpdb
+  - MYSQL_USER=mysqluser
+  - MYSQL_PASSWORD=mysqlpw
+  - MYSQL_ROOT_HOST=%
