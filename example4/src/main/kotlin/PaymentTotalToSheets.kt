@@ -37,7 +37,6 @@ class PaymentTotalToSheets: QuarkusApplication {
                         {
                             set { _, msg, state ->
                                 state["total"] = (state["total"] as BigDecimal).subtract(msg["amount"] as BigDecimal)
-                                state["_row"] = 2L
                                 state
                             }
                         }

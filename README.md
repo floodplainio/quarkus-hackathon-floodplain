@@ -28,6 +28,7 @@ Now, add the following dependencies to your gradle build:
 ```
 (I need to create a BOM like super artifact, would make this prettier TODO.)
 
+
 I use the ElasticSearch sink from Confluent, it is not completely open source, so you need to add the confluent repository to the repositories section of your gradle.build:
 ```gradle  
 	maven {
