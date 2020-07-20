@@ -8,7 +8,6 @@ services:
       POSTGRES_PASSWORD: mysecretpassword
   mongo:
     image: mongo:latest
-    container_name: "mongo"
     environment:
       - MONGO_DATA_DIR=/data/db
     ports:
