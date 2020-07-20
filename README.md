@@ -14,7 +14,7 @@ To make your own Quarkus / Floodplain project.
 ```
 Append the floodplain version to the gradle.properties file:
 ```
-floodplainVersion=0.9.19
+floodplainVersion=0.9.20
 ```
 Now, add the following dependencies to your gradle build:
 
