@@ -2,6 +2,9 @@
 
 All examples are individual gradle builds + IntelliJ projects.
 
+Demo video:
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/CnTOwNKbsOw/0.jpg)](http://www.youtube.com/watch?v=CnTOwNKbsOw "Video Title")
+
 Floodplain itself is hosted here: https://github.com/floodplainio/floodplain-library
 
 To make your own Quarkus / Floodplain project.
